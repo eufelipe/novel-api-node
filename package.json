@@ -1,0 +1,9 @@
+{
+  "name": "novel-api-node",
+  "version": "1.0.0",
+  "description": "API for game about novels",
+  "main": "index.js",
+  "repository": "git@github.com:eufelipe/novel-api-node.git",
+  "author": "Felipe Rosas <contato@eufelipe.com>",
+  "license": "MIT"
+}
