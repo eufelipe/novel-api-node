@@ -11,9 +11,16 @@
         "format:check": "prettier --check .",
         "format:write": "prettier --write .",
         "lint:check": "eslint src/* ",
-        "lint:fix": "eslint src/* --fix ."
+        "lint:fix": "eslint src/* --fix .",
+        "test": "jest --passWithNoTests --runInBand --noStackTrace --no-cache --silent",
+        "test:unit": "yarn test -- --watch -c jest-unit-config.js",
+        "test:integration": "yarn test -- --watch -c jest-integration-config.js",
+        "test:verbose": "jest --passWithNoTests --runInBand",
+        "test:staged": "yarn test -- --findRelatedTests",
+        "test:ci": "yarn test -- --coverage"
     },
     "devDependencies": {
+        "@types/jest": "^27.5.1",
         "@types/typescript": "^2.0.0",
         "@typescript-eslint/eslint-plugin": "^5.23.0",
         "@typescript-eslint/parser": "^5.23.0",
@@ -21,8 +28,11 @@
         "eslint-config-prettier": "^8.5.0",
         "git-commit-msg-linter": "^4.1.2",
         "husky": "^8.0.1",
+        "jest": "^28.1.0",
         "lint-staged": ">=10",
         "prettier": "^2.6.2",
+        "ts-jest": "^28.0.2",
+        "ts-node": "^10.7.0",
         "typescript": "^4.6.4"
     }
 }
