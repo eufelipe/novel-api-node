@@ -1,4 +1,4 @@
-import { Novel } from '../entity/novel'
+import { Novel } from '@/domain/novel/entity/novel'
 
 export interface SearchNovelByTerm {
     findByTerm: (term: string) => Promise<SearchNovelByTerm.Result>
